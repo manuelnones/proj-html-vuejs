@@ -138,7 +138,6 @@ header {
     // /nav-bar
 
     #text-header {
-        width: 500px;
         margin: auto;
         text-align: center;
         margin-top: 80px;
@@ -170,13 +169,13 @@ header {
 
     #imgs-header {
         display: flex;
-        height: 400px;
+        height: 440px;
         max-width: 1200px;
         margin: auto;
         margin-top: 30px;
 
         #img-left {
-            width: 280px;
+            width: 310px;
             height: 100%;
 
             img {
@@ -185,7 +184,7 @@ header {
         }
 
         #img-center {
-            width: calc(100% - 280px - 200px);
+            width: calc(100% - 310px - 200px);
             height: 100%;
             border-radius: 15px;
             background-color: #FFFFFF;
@@ -214,7 +213,5 @@ header {
             }
         }
     }
-
-
 }
 </style>

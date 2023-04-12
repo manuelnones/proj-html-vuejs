@@ -59,7 +59,7 @@ export default {
 main {
     padding-top: 89px;
     padding-bottom: 90px;
-    n // section-1 ---------------------------
+    // section-1 ---------------------------
 
     #text-sect-1 {
         width: 500px;

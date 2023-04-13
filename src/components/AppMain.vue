@@ -3,6 +3,8 @@ export default {
     name: `AppMain`,
     data() {
         return {
+            bigImg: `./img/home-6-services-image.png`,
+
             imgCard1: `./img/home-6-service-image-01.png`,
             imgCard2: `./img/home-6-service-image-03.png`,
             imgCard3: `./img/home-6-service-image-02.png`,
@@ -389,6 +391,39 @@ export default {
 
         <!-- section-5  -->
         <section id="section-5">
+            <div id="top-sub-title-sect-5">wanna transform your life?</div>
+            <h1>Glad to <span>Help You </span>Learn</h1>
+
+            <div id="components-sect-5">
+                <div class="components">
+                    <i class="fa-regular fa-flag"></i>
+                    <h4>Idea Discussion</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="components">
+                    <i class="fa-solid fa-gear"></i>
+                    <h4>Web Development</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="components">
+                    <i class="fa-regular fa-life-ring"></i>
+                    <h4>System Administrator</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="components">
+                    <i class="fa-solid fa-tv"></i>
+                    <h4>Graphic Design</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet.</p>
+                </div>
+
+            </div>
+
+            <div id="big-img-container">
+                <img :src="bigImg">
+            </div>
         </section>
         <!-- /section-5  -->
 
@@ -826,6 +861,77 @@ main {
     }
 
     // /section-4 ----------------------
+
+
+    // section-5 ------------------- 
+    #section-5 {
+        padding-top: 80px;
+        background-color: #EFF1F4;
+
+        #top-sub-title-sect-5 {
+            text-align: center;
+            color: gray;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 0.8em;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 2em;
+
+            span {
+                color: $greenColor;
+                font-weight: normal;
+            }
+        }
+
+        #components-sect-5 {
+            display: flex;
+            gap: 20px;
+            width: 900px;
+            margin: auto;
+            margin-top: 60px;
+
+            .components {
+                width: calc(100% / 4);
+                height: 200px;
+
+                i {
+                    font-size: 3em;
+                    color: #353535;
+                }
+
+                h4 {
+                    color: #353535;
+                    margin-top: 20px;
+                }
+
+                p {
+                    margin-top: 5px;
+                    color: gray;
+                }
+
+            }
+        }
+
+        #big-img-container {
+            width: 850px;
+            height: 300px;
+            margin: auto;
+            margin-top: 150px;
+
+            img {
+                height: 100%;
+                object-position: 0px 21px;
+                overflow: visible;
+
+            }
+        }
+    }
+
+    // /section-5 -------------------- 
 
 
     // section-6 ----------------------

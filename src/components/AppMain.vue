@@ -261,7 +261,7 @@ export default {
 
             </div>
 
-            <div id="btn-container">
+            <div class="btn-container">
                 <button> <strong>View all courses --></strong> </button>
             </div>
         </section>
@@ -395,6 +395,11 @@ export default {
 
         <!-- section-6  -->
         <section id="section-6">
+            <div id="top-sub-title-sect-6">Start today for getting <span>Online Certification</span></div>
+            <h1>You can be your own guiding star with our help!</h1>
+            <div class="btn-container">
+                <button> <strong>Get started now</strong> </button>
+            </div>
         </section>
         <!-- /section-6  -->
     </main>
@@ -596,7 +601,6 @@ main {
 
             span {
                 color: $greenColor;
-                text-transform: inherit;
                 font-weight: normal;
             }
         }
@@ -645,7 +649,7 @@ main {
             }
         }
 
-        #btn-container {
+        .btn-container {
             width: 204px;
             margin: auto;
 
@@ -760,7 +764,6 @@ main {
 
             span {
                 color: $greenColor;
-                text-transform: inherit;
                 font-weight: normal;
             }
         }
@@ -812,5 +815,43 @@ main {
 
     // /section-4 ----------------------
 
+
+    // section-6 ----------------------
+    #section-6 {
+        padding-top: 80px;
+        padding-bottom: 90px;
+
+        #top-sub-title-sect-6 {
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.5em;
+
+            span {
+                color: $greenColor;
+                font-weight: normal;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+
+        }
+
+        .btn-container {
+            width: 204px;
+            margin: auto;
+
+            button {
+                padding: 15px 50px;
+                background-color: $greenColor;
+                border: none;
+                border-radius: 4px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    // /section-6 ----------------------
 }
 </style>

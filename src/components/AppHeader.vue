@@ -69,6 +69,7 @@ export default {
 header {
     background-color: #1F1F52;
     height: 700px;
+    color: #FFFFFF;
 
     // nav-bar
     #nav-bar {

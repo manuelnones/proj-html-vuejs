@@ -262,7 +262,7 @@ export default {
             </div>
 
             <div class="btn-container">
-                <button> <strong>View all courses --></strong> </button>
+                <button> <strong>View all courses <i class="fa-solid fa-arrow-right-long"></i></strong> </button>
             </div>
         </section>
         <!-- /section-2  -->
@@ -572,6 +572,12 @@ main {
                     background-color: $greenColor;
                     border: none;
                     border-radius: 4px;
+                    cursor: pointer;
+                }
+
+                button:hover {
+                    background-color: #3F3A64;
+                    color: #FFFFFF;
                 }
             }
         }
@@ -659,6 +665,12 @@ main {
                 border: none;
                 border-radius: 4px;
                 margin-top: 20px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #3F3A64;
+                color: #FFFFFF;
             }
         }
     }
@@ -848,6 +860,12 @@ main {
                 border: none;
                 border-radius: 4px;
                 margin-top: 20px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #3F3A64;
+                color: #FFFFFF;
             }
         }
     }

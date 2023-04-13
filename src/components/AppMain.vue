@@ -3,6 +3,11 @@ export default {
     name: `AppMain`,
     data() {
         return {
+            imgCard1: `./img/home-6-service-image-01.png`,
+            imgCard2: `./img/home-6-service-image-03.png`,
+            imgCard3: `./img/home-6-service-image-02.png`,
+            imgCard4: `./img/home-6-service-image-04.png`,
+
             imgCourses1: `./img/course-02-480x298.jpg`,
             imgCourses2: `./img/stock-full-hd-04-480x298.jpg`,
             imgCourses3: `./img/course-featured-image-01-480x298.jpg`,
@@ -64,13 +69,57 @@ export default {
 
                 <div id="cards-container">
                     <div id="cards-left">
-                        <div class="card"></div>
-                        <div class="card card-left-bottom"></div>
+                        <div class="card">
+                            <h4>Graphic Design</h4>
+
+                            <p>
+                                Have a passion for graphics and arts? Show your talent with confidence and
+                                self-assertiveness.
+                            </p>
+
+                            <div class="img-card-container">
+                                <img :src="imgCard1">
+                            </div>
+                        </div>
+
+                        <div class="card card-left-bottom">
+                            <div class="img-card-container">
+                                <img :src="imgCard2">
+                            </div>
+
+                            <h4>Idea Discussion</h4>
+
+                            <p>
+                                Get teamed up with the specialist who work and teach coding for years at famous
+                                universities.
+                            </p>
+                        </div>
                     </div>
 
                     <div id="cards-right">
-                        <div class="card card-right-top"></div>
-                        <div class="card"></div>
+                        <div class="card card-right-top">
+                            <h4>Business Administration</h4>
+
+                            <p>
+                                Leamers are encouraged to study the mechanism and structure of system administration.
+                            </p>
+
+                            <div class="img-card-container">
+                                <img :src="imgCard3">
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="img-card-container">
+                                <img :src="imgCard4">
+                            </div>
+
+                            <h4>Web Development</h4>
+
+                            <p>
+                                Learn to start building a webpage from scratch. You decide your awn pace, course and speed.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -349,9 +398,34 @@ main {
 
                 .card {
                     width: 230px;
-                    height: 350px;
-                    background-color: aquamarine;
-                    // /prova 
+                    padding-bottom: 20px;
+                    box-shadow: 10px 0px 40px #C4C4C4;
+
+
+                    .img-card-container {
+                        height: 170px;
+                        width: 80%;
+                        margin: auto;
+                        margin-top: 20px;
+                        padding-top: 20px;
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+
+                    h4 {
+                        padding-top: 20px;
+                        margin-left: 15px;
+                        color: #3F3A6D;
+                    }
+
+                    p {
+                        padding-top: 5px;
+                        margin-left: 15px;
+                        color: #5F6468;
+                    }
                 }
 
                 #cards-right {
@@ -359,12 +433,24 @@ main {
 
                     .card-right-top {
                         margin-bottom: 20px;
+
+                        .img-card-container {
+                            width: 60%;
+                            margin: auto;
+                            margin-top: 20px;
+                        }
                     }
                 }
 
                 #cards-left {
                     .card-left-bottom {
                         margin-top: 20px;
+
+                        .img-card-container {
+                            width: 60%;
+                            margin-top: 20px;
+                            margin-left: 0;
+                        }
                     }
                 }
             }

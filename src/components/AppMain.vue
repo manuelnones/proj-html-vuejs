@@ -23,6 +23,10 @@ export default {
             logo4Sect3: `./img/client-logo-colored-04.png`,
             logo5Sect3: `./img/client-logo-colored-05.png`,
             logo6Sect3: `./img/client-logo-colored-06.png`,
+
+            img1Sect4: `./img/artist-blog-03-480x325.jpeg`,
+            img2Sect4: `./img/artist-blog-01-480x325.jpg`,
+            img3Sect4: `./img/artist-blog-02-480x325.jpg`,
         }
     }
 }
@@ -309,6 +313,76 @@ export default {
 
         <!-- section-4  -->
         <section id="section-4">
+            <div id="top-sub-title-sect-4">enjoy reading on maxcoach</div>
+            <h1>Latest on <span>Our Blogs</span></h1>
+
+            <div id="components-sect-4">
+                <div class="components">
+                    <div class="img-sect-4-container">
+                        <img :src="img1Sect4" alt="">
+                    </div>
+
+                    <div class="artist">Artist</div>
+
+                    <h4 class="title-img">Brush Strokes Energize Trees in Paintings</h4>
+
+                    <div class="info-img">
+                        <span>
+                            <i class="fa-regular fa-calendar"></i>
+                            May 15, 2020
+                        </span>
+
+                        <span>
+                            <i class="fa-regular fa-eye"></i>
+                            688 views
+                        </span>
+                    </div>
+                </div>
+
+                <div class="components">
+                    <div class="img-sect-4-container">
+                        <img :src="img2Sect4" alt="">
+                    </div>
+
+                    <div class="artist">Artist</div>
+
+                    <h4 class="title-img">Pocket-Sized Notebooks Hold Miniature Paintings</h4>
+
+                    <div class="info-img">
+                        <span>
+                            <i class="fa-regular fa-calendar"></i>
+                            May 15, 2020
+                        </span>
+
+                        <span>
+                            <i class="fa-regular fa-eye"></i>
+                            603 views
+                        </span>
+                    </div>
+                </div>
+
+                <div class="components">
+                    <div class="img-sect-4-container">
+                        <img :src="img3Sect4" alt="">
+                    </div>
+
+                    <div class="artist">Artist</div>
+
+                    <h4 class="title-img">Connection Between Self-Portraits and Identity</h4>
+
+                    <div class="info-img">
+                        <span>
+                            <i class="fa-regular fa-calendar"></i>
+                            May 15, 2020
+                        </span>
+
+                        <span>
+                            <i class="fa-regular fa-eye"></i>
+                            397 views
+                        </span>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- /section-4  -->
 
@@ -664,5 +738,79 @@ main {
     }
 
     //  /section-3 
+
+
+    // section-4 ----------------------
+    #section-4 {
+        padding-top: 80px;
+        padding-bottom: 90px;
+        background-color: #F8F8F8;
+
+        #top-sub-title-sect-4 {
+            text-align: center;
+            color: gray;
+            text-transform: uppercase;
+            font-size: 0.7em;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2em;
+
+            span {
+                color: $greenColor;
+                text-transform: inherit;
+                font-weight: normal;
+            }
+        }
+
+        #components-sect-4 {
+            display: flex;
+            gap: 30px;
+            width: 900px;
+            margin: auto;
+            margin-top: 50px;
+
+            .components {
+                width: calc(100% / 3);
+
+                .img-sect-4-container {
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .artist {
+                    text-transform: uppercase;
+                    margin-top: 15px;
+                    font-size: 0.9em;
+                    font-weight: 700;
+                    color: gray;
+                }
+
+                .title-img {
+                    margin-top: 10px;
+                    font-size: 1.2em;
+                }
+
+                .info-img {
+                    margin-top: 20px;
+                    color: gray;
+
+                    span {
+                        padding-right: 20px;
+
+                        i {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // /section-4 ----------------------
+
 }
 </style>
